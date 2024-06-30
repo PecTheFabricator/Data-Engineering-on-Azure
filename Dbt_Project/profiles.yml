@@ -11,7 +11,4 @@ API_Footeball:
       database: "DWH_API-Football"
       schema: dbo
       threads: 4
-      authentication: ServicePrincipal
-      tenant_id: "op://Developer/663hhhtx4ofz4yqf53fip2awq4/tenantID"
-      client_id: "op://Developer/Login/username"
-      client_secret: "op://Developer/663hhhtx4ofz4yqf53fip2awq4/password"
+      authentication: CLI
