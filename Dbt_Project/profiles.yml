@@ -1,0 +1,17 @@
+config:
+  partial_parse: true
+API_Footeball:
+  target: fabric-dev
+  outputs:
+    fabric-dev:
+      type: fabric
+      driver: "ODBC Driver 18 for SQL Server"
+      server: "bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com"
+      port: 1433
+      database: "DWH_API-Football"
+      schema: dbo
+      threads: 4
+      authentication: ServicePrincipal
+      tenant_id: "op://Developer/663hhhtx4ofz4yqf53fip2awq4/tenantID"
+      client_id: "op://Developer/Login/username"
+      client_secret: "op://Developer/663hhhtx4ofz4yqf53fip2awq4/password"
