@@ -102,3 +102,451 @@ ImportError: dlopen(/Users/pcunha/miniconda3/lib/python3.12/site-packages/pyodbc
 [0m18:21:36.826216 [debug] [MainThread]: Command `dbt debug` failed at 18:21:36.826152 after 0.07 seconds
 [0m18:21:36.826481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10817ad80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082fc6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d0a0c0>]}
 [0m18:21:36.826697 [debug] [MainThread]: Flushing usage events
+[0m19:15:56.488833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa7bb069c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa7b248c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa7b120aa0>]}
+
+
+============================== 19:15:56.489536 | e69f83d6-ab25-4148-803c-b1c8cd28d6a0 ==============================
+[0m19:15:56.489536 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:15:56.490120 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:15:56.500487 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:15:56.500969 [info ] [MainThread]: python version: 3.12.4
+[0m19:15:56.501312 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:15:56.501657 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:15:56.658682 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:15:56.659200 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:15:56.659557 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:15:56.659919 [info ] [MainThread]: adapter type: fabric
+[0m19:15:56.660249 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:15:56.749612 [info ] [MainThread]: Configuration:
+[0m19:15:56.750127 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:15:56.750497 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:15:56.750844 [info ] [MainThread]: Required dependencies:
+[0m19:15:56.751196 [debug] [MainThread]: Executing "git --help"
+[0m19:15:56.753218 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:15:56.753830 [debug] [MainThread]: STDERR: "b''"
+[0m19:15:56.754155 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:15:56.754548 [info ] [MainThread]: Connection:
+[0m19:15:56.754924 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:15:56.755260 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:15:56.755582 [info ] [MainThread]:   schema: dbo
+[0m19:15:56.755910 [info ] [MainThread]:   UID: None
+[0m19:15:56.756233 [info ] [MainThread]:   client_id: op://Developer/Login/username
+[0m19:15:56.756574 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:15:56.756932 [info ] [MainThread]:   encrypt: True
+[0m19:15:56.757252 [info ] [MainThread]:   trust_cert: False
+[0m19:15:56.757571 [info ] [MainThread]:   retries: 1
+[0m19:15:56.757907 [info ] [MainThread]:   login_timeout: 0
+[0m19:15:56.758227 [info ] [MainThread]:   query_timeout: 0
+[0m19:15:56.758564 [info ] [MainThread]:   trace_flag: False
+[0m19:15:56.759052 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:15:56.760429 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:15:56.760790 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:15:56.761114 [debug] [MainThread]: On debug: select 1 as id
+[0m19:15:56.761423 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:15:56.761824 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:15:56.763990 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:15:56.764391 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:15:56.764728 [debug] [MainThread]: On debug: No close available on handle
+[0m19:15:56.765125 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:15:56.765481 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:15:56.765844 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 18 for SQL Server' : file not found (0) (SQLDriverConnect)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:15:56.766750 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.32955915, "process_user_time": 1.500697, "process_kernel_time": 0.115746, "process_mem_max_rss": "114680", "process_in_blocks": "952", "process_out_blocks": "24", "command_success": false}
+[0m19:15:56.767282 [debug] [MainThread]: Command `dbt debug` failed at 19:15:56.767177 after 0.33 seconds
+[0m19:15:56.767659 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:15:56.768045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa79ae1e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa79991d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa7a72ae10>]}
+[0m19:15:56.768486 [debug] [MainThread]: Flushing usage events
+[0m19:17:04.676326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2012d6e1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2013043530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2012d6f9e0>]}
+
+
+============================== 19:17:04.677062 | d8b6f34a-e340-4b5f-817b-727c1f37f0d3 ==============================
+[0m19:17:04.677062 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:17:04.677666 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:04.688167 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:17:04.688661 [info ] [MainThread]: python version: 3.12.4
+[0m19:17:04.689047 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:17:04.689413 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:17:04.842302 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:17:04.842894 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:17:04.843297 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:17:04.843697 [info ] [MainThread]: adapter type: fabric
+[0m19:17:04.844064 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:17:04.935087 [info ] [MainThread]: Configuration:
+[0m19:17:04.935617 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:17:04.936004 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:17:04.936371 [info ] [MainThread]: Required dependencies:
+[0m19:17:04.936780 [debug] [MainThread]: Executing "git --help"
+[0m19:17:04.938707 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:17:04.939364 [debug] [MainThread]: STDERR: "b''"
+[0m19:17:04.939733 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:17:04.940147 [info ] [MainThread]: Connection:
+[0m19:17:04.940624 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:17:04.941018 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:17:04.941390 [info ] [MainThread]:   schema: dbo
+[0m19:17:04.941803 [info ] [MainThread]:   UID: None
+[0m19:17:04.942277 [info ] [MainThread]:   client_id: op://Developer/Login/username
+[0m19:17:04.942691 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:17:04.943064 [info ] [MainThread]:   encrypt: True
+[0m19:17:04.943434 [info ] [MainThread]:   trust_cert: False
+[0m19:17:04.943816 [info ] [MainThread]:   retries: 1
+[0m19:17:04.944182 [info ] [MainThread]:   login_timeout: 0
+[0m19:17:04.944559 [info ] [MainThread]:   query_timeout: 0
+[0m19:17:04.944925 [info ] [MainThread]:   trace_flag: False
+[0m19:17:04.945446 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:17:04.946942 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:17:04.947478 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:17:04.947864 [debug] [MainThread]: On debug: select 1 as id
+[0m19:17:04.948175 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:17:04.948567 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:17:04.949519 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:17:04.949860 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:17:04.950176 [debug] [MainThread]: On debug: No close available on handle
+[0m19:17:04.950553 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:17:04.950960 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:17:04.951352 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 18 for SQL Server' : file not found (0) (SQLDriverConnect)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:17:04.952197 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.3272041, "process_user_time": 1.497393, "process_kernel_time": 0.111793, "process_mem_max_rss": "114688", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m19:17:04.952738 [debug] [MainThread]: Command `dbt debug` failed at 19:17:04.952632 after 0.33 seconds
+[0m19:17:04.953083 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:17:04.953437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2012e67f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2011a084d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20138ccd70>]}
+[0m19:17:04.953842 [debug] [MainThread]: Flushing usage events
+[0m19:18:06.073704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2fd72e300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ff9c5790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2fd4a1bb0>]}
+
+
+============================== 19:18:06.074393 | 5e8bad62-1f14-4662-b318-289d5bfc4ac1 ==============================
+[0m19:18:06.074393 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:18:06.075021 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:06.085517 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:18:06.086029 [info ] [MainThread]: python version: 3.12.4
+[0m19:18:06.086435 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:18:06.086830 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:18:06.237164 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:18:06.237717 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:18:06.238124 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:18:06.238541 [info ] [MainThread]: adapter type: fabric
+[0m19:18:06.238926 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:18:06.329228 [info ] [MainThread]: Configuration:
+[0m19:18:06.329784 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:18:06.330211 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:18:06.330622 [info ] [MainThread]: Required dependencies:
+[0m19:18:06.331025 [debug] [MainThread]: Executing "git --help"
+[0m19:18:06.332861 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:18:06.333465 [debug] [MainThread]: STDERR: "b''"
+[0m19:18:06.333811 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:18:06.334172 [info ] [MainThread]: Connection:
+[0m19:18:06.334594 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:18:06.335043 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:18:06.335372 [info ] [MainThread]:   schema: dbo
+[0m19:18:06.335707 [info ] [MainThread]:   UID: None
+[0m19:18:06.336113 [info ] [MainThread]:   client_id: op://Developer/Login/username
+[0m19:18:06.336493 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:18:06.336895 [info ] [MainThread]:   encrypt: True
+[0m19:18:06.337234 [info ] [MainThread]:   trust_cert: False
+[0m19:18:06.337585 [info ] [MainThread]:   retries: 1
+[0m19:18:06.337922 [info ] [MainThread]:   login_timeout: 0
+[0m19:18:06.338262 [info ] [MainThread]:   query_timeout: 0
+[0m19:18:06.338654 [info ] [MainThread]:   trace_flag: False
+[0m19:18:06.339164 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:18:06.340583 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:18:06.340980 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:18:06.341337 [debug] [MainThread]: On debug: select 1 as id
+[0m19:18:06.341704 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:18:06.342094 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:18:06.343075 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:18:06.343409 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:18:06.343734 [debug] [MainThread]: On debug: No close available on handle
+[0m19:18:06.344071 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:18:06.344440 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:18:06.344847 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 18 for SQL Server' : file not found (0) (SQLDriverConnect)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:18:06.345693 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.32329443, "process_user_time": 1.514794, "process_kernel_time": 0.09193, "process_mem_max_rss": "114620", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m19:18:06.346237 [debug] [MainThread]: Command `dbt debug` failed at 19:18:06.346129 after 0.32 seconds
+[0m19:18:06.346657 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:18:06.347049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2fd81b920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2fc3ba2a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2fc0e8f80>]}
+[0m19:18:06.347463 [debug] [MainThread]: Flushing usage events
+[0m19:18:35.549701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ee897b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ef15a660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ee894f80>]}
+
+
+============================== 19:18:35.550418 | b76d90f9-dc1d-48f1-89e7-30505d3833de ==============================
+[0m19:18:35.550418 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:18:35.551008 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:35.561405 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:18:35.561894 [info ] [MainThread]: python version: 3.12.4
+[0m19:18:35.562242 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:18:35.562606 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:18:35.714503 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:18:35.715023 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:18:35.715398 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:18:35.715758 [info ] [MainThread]: adapter type: fabric
+[0m19:18:35.716096 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:18:35.807517 [info ] [MainThread]: Configuration:
+[0m19:18:35.808048 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:18:35.808411 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:18:35.808913 [info ] [MainThread]: Required dependencies:
+[0m19:18:35.809345 [debug] [MainThread]: Executing "git --help"
+[0m19:18:35.811026 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:18:35.811504 [debug] [MainThread]: STDERR: "b''"
+[0m19:18:35.811844 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:18:35.812189 [info ] [MainThread]: Connection:
+[0m19:18:35.812546 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:18:35.812891 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:18:35.813215 [info ] [MainThread]:   schema: dbo
+[0m19:18:35.813536 [info ] [MainThread]:   UID: None
+[0m19:18:35.813869 [info ] [MainThread]:   client_id: 3e7a2587-3219-440a-943c-cede9fed9512
+[0m19:18:35.814197 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:18:35.814541 [info ] [MainThread]:   encrypt: True
+[0m19:18:35.814873 [info ] [MainThread]:   trust_cert: False
+[0m19:18:35.815190 [info ] [MainThread]:   retries: 1
+[0m19:18:35.815506 [info ] [MainThread]:   login_timeout: 0
+[0m19:18:35.815835 [info ] [MainThread]:   query_timeout: 0
+[0m19:18:35.816150 [info ] [MainThread]:   trace_flag: False
+[0m19:18:35.816632 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:18:35.817975 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:18:35.818342 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:18:35.818706 [debug] [MainThread]: On debug: select 1 as id
+[0m19:18:35.819025 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:18:35.819425 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={3e7a2587-3219-440a-943c-cede9fed9512};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:18:35.820452 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:18:35.820817 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:18:35.821145 [debug] [MainThread]: On debug: No close available on handle
+[0m19:18:35.821494 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:18:35.821860 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:18:35.822207 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 18 for SQL Server' : file not found (0) (SQLDriverConnect)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:18:35.823077 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.32521582, "process_user_time": 1.512814, "process_kernel_time": 0.08803, "process_mem_max_rss": "114664", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m19:18:35.823611 [debug] [MainThread]: Command `dbt debug` failed at 19:18:35.823504 after 0.33 seconds
+[0m19:18:35.823975 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:18:35.824331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ed422b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ee1e5100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9ee11dc70>]}
+[0m19:18:35.824738 [debug] [MainThread]: Flushing usage events
+[0m19:21:56.297622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f493056f5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4930fdd970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f492ec48bc0>]}
+
+
+============================== 19:21:56.298321 | 26bbe804-a175-4d33-ad4d-7f864d7a2ff7 ==============================
+[0m19:21:56.298321 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:21:56.298953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:21:56.309553 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:21:56.310035 [info ] [MainThread]: python version: 3.12.4
+[0m19:21:56.310462 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:21:56.310854 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:21:56.459695 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:21:56.460219 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:21:56.460624 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:21:56.461017 [info ] [MainThread]: adapter type: fabric
+[0m19:21:56.461387 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:21:56.550597 [info ] [MainThread]: Configuration:
+[0m19:21:56.551121 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:21:56.551508 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:21:56.551892 [info ] [MainThread]: Required dependencies:
+[0m19:21:56.552291 [debug] [MainThread]: Executing "git --help"
+[0m19:21:56.554126 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:21:56.554766 [debug] [MainThread]: STDERR: "b''"
+[0m19:21:56.555100 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:21:56.555455 [info ] [MainThread]: Connection:
+[0m19:21:56.555838 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:21:56.556182 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:21:56.556514 [info ] [MainThread]:   schema: dbo
+[0m19:21:56.556887 [info ] [MainThread]:   UID: None
+[0m19:21:56.557245 [info ] [MainThread]:   client_id: 3e7a2587-3219-440a-943c-cede9fed9512
+[0m19:21:56.557614 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:21:56.557967 [info ] [MainThread]:   encrypt: True
+[0m19:21:56.558325 [info ] [MainThread]:   trust_cert: False
+[0m19:21:56.558707 [info ] [MainThread]:   retries: 1
+[0m19:21:56.559055 [info ] [MainThread]:   login_timeout: 0
+[0m19:21:56.559401 [info ] [MainThread]:   query_timeout: 0
+[0m19:21:56.559779 [info ] [MainThread]:   trace_flag: False
+[0m19:21:56.560458 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:21:56.562233 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:21:56.562770 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:21:56.563131 [debug] [MainThread]: On debug: select 1 as id
+[0m19:21:56.563471 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:21:56.563911 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={3e7a2587-3219-440a-943c-cede9fed9512};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:22:06.720417 [debug] [MainThread]: fabric adapter: Connected to db: DWH_API-Football
+[0m19:22:06.942299 [debug] [MainThread]: SQL status: OK in 10.0 seconds
+[0m19:22:06.943473 [debug] [MainThread]: On debug: Close
+[0m19:22:06.945132 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:22:06.945525 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:22:06.946416 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 10.699619, "process_user_time": 1.568887, "process_kernel_time": 0.083735, "process_mem_max_rss": "119456", "process_in_blocks": "48", "process_out_blocks": "32"}
+[0m19:22:06.946967 [debug] [MainThread]: Command `dbt debug` succeeded at 19:22:06.946860 after 10.70 seconds
+[0m19:22:06.947315 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:22:06.947699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f493056f5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f492f0774a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f492ea31700>]}
+[0m19:22:06.948101 [debug] [MainThread]: Flushing usage events
+[0m19:22:16.276796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb201eaff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb201eadb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb201eacf0>]}
+
+
+============================== 19:22:16.277395 | f53f0bbb-7a9c-47fd-a351-d9dfd7b8158d ==============================
+[0m19:22:16.277395 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:22:16.277953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:22:16.288081 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:22:16.288548 [info ] [MainThread]: python version: 3.12.4
+[0m19:22:16.288902 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:22:16.289252 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:22:16.438601 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:22:16.439113 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:22:16.439468 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:22:16.439825 [info ] [MainThread]: adapter type: fabric
+[0m19:22:16.440150 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:22:16.529658 [info ] [MainThread]: Configuration:
+[0m19:22:16.530167 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:22:16.530540 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:22:16.530887 [info ] [MainThread]: Required dependencies:
+[0m19:22:16.531238 [debug] [MainThread]: Executing "git --help"
+[0m19:22:16.532944 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:22:16.533451 [debug] [MainThread]: STDERR: "b''"
+[0m19:22:16.533814 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:22:16.534175 [info ] [MainThread]: Connection:
+[0m19:22:16.534598 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:22:16.535038 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:22:16.535368 [info ] [MainThread]:   schema: dbo
+[0m19:22:16.535703 [info ] [MainThread]:   UID: None
+[0m19:22:16.536100 [info ] [MainThread]:   client_id: op://Developer/Login/username
+[0m19:22:16.536444 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:22:16.536787 [info ] [MainThread]:   encrypt: True
+[0m19:22:16.537109 [info ] [MainThread]:   trust_cert: False
+[0m19:22:16.537436 [info ] [MainThread]:   retries: 1
+[0m19:22:16.537767 [info ] [MainThread]:   login_timeout: 0
+[0m19:22:16.538090 [info ] [MainThread]:   query_timeout: 0
+[0m19:22:16.538427 [info ] [MainThread]:   trace_flag: False
+[0m19:22:16.538907 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:22:16.540224 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:22:16.540699 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:22:16.541045 [debug] [MainThread]: On debug: select 1 as id
+[0m19:22:16.541377 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:22:16.541882 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:22:38.774519 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a fabric connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('HYT00', '[HYT00] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+[0m19:22:39.775230 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:23:02.146266 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:23:02.146771 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:23:02.147190 [debug] [MainThread]: On debug: No close available on handle
+[0m19:23:02.147576 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:23:02.147950 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:23:02.148341 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('HYT00', '[HYT00] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:23:02.149258 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 45.924156, "process_user_time": 1.65917, "process_kernel_time": 0.127325, "process_mem_max_rss": "119240", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m19:23:02.149806 [debug] [MainThread]: Command `dbt debug` failed at 19:23:02.149699 after 45.92 seconds
+[0m19:23:02.150183 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:23:02.150581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb201eade0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb1f238a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb1fd9cdd0>]}
+[0m19:23:02.151011 [debug] [MainThread]: Flushing usage events
+[0m19:23:20.271396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc313fef470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3126e9370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3126e94f0>]}
+
+
+============================== 19:23:20.272074 | d404e19c-3f07-4377-bf1e-6f5385deb3b8 ==============================
+[0m19:23:20.272074 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:23:20.272664 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project', 'log_path': '/home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:23:20.283174 [info ] [MainThread]: dbt version: 1.8.3
+[0m19:23:20.283638 [info ] [MainThread]: python version: 3.12.4
+[0m19:23:20.283978 [info ] [MainThread]: python path: /home/pedro/miniconda3/envs/AZDEProject/bin/python3.12
+[0m19:23:20.284316 [info ] [MainThread]: os info: Linux-6.1.0-21-amd64-x86_64-with-glibc2.36
+[0m19:23:20.437801 [info ] [MainThread]: Using profiles dir at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project
+[0m19:23:20.438321 [info ] [MainThread]: Using profiles.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/profiles.yml
+[0m19:23:20.438696 [info ] [MainThread]: Using dbt_project.yml file at /home/pedro/Development/Github/Data-Engineering-on-Azure/Dbt_Project/dbt_project.yml
+[0m19:23:20.439042 [info ] [MainThread]: adapter type: fabric
+[0m19:23:20.439381 [info ] [MainThread]: adapter version: 1.8.7
+[0m19:23:20.529113 [info ] [MainThread]: Configuration:
+[0m19:23:20.529618 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:23:20.529970 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:23:20.530316 [info ] [MainThread]: Required dependencies:
+[0m19:23:20.530688 [debug] [MainThread]: Executing "git --help"
+[0m19:23:20.532495 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:23:20.533117 [debug] [MainThread]: STDERR: "b''"
+[0m19:23:20.533495 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:23:20.533894 [info ] [MainThread]: Connection:
+[0m19:23:20.534313 [info ] [MainThread]:   server: bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com
+[0m19:23:20.534701 [info ] [MainThread]:   database: DWH_API-Football
+[0m19:23:20.535062 [info ] [MainThread]:   schema: dbo
+[0m19:23:20.535437 [info ] [MainThread]:   UID: None
+[0m19:23:20.535809 [info ] [MainThread]:   client_id: op://Developer/Login/username
+[0m19:23:20.536196 [info ] [MainThread]:   authentication: ActiveDirectoryServicePrincipal
+[0m19:23:20.536571 [info ] [MainThread]:   encrypt: True
+[0m19:23:20.536943 [info ] [MainThread]:   trust_cert: False
+[0m19:23:20.537326 [info ] [MainThread]:   retries: 1
+[0m19:23:20.537690 [info ] [MainThread]:   login_timeout: 0
+[0m19:23:20.538057 [info ] [MainThread]:   query_timeout: 0
+[0m19:23:20.538444 [info ] [MainThread]:   trace_flag: False
+[0m19:23:20.538964 [info ] [MainThread]: Registered adapter: fabric=1.8.7
+[0m19:23:20.540388 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m19:23:20.540778 [debug] [MainThread]: Using fabric connection "debug"
+[0m19:23:20.541140 [debug] [MainThread]: On debug: select 1 as id
+[0m19:23:20.541476 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:23:20.541915 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:23:42.916323 [debug] [MainThread]: fabric adapter: Got a retryable error when attempting to open a fabric connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('HYT00', '[HYT00] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+[0m19:23:43.917074 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=bnndvdb2giyevgij27llw27a64-vfmhb4tmhruu5hlxltjgjkqkve.datawarehouse.fabric.microsoft.com;Database=DWH_API-Football;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryServicePrincipal;UID={op://Developer/Login/username};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.8.7;ConnectRetryCount=1
+[0m19:24:06.346686 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m19:24:06.347180 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m19:24:06.347548 [debug] [MainThread]: On debug: No close available on handle
+[0m19:24:06.347915 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:24:06.348287 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:24:06.348661 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('HYT00', '[HYT00] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:24:06.349552 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 46.129772, "process_user_time": 1.704013, "process_kernel_time": 0.096002, "process_mem_max_rss": "119284", "process_out_blocks": "40", "command_success": false, "process_in_blocks": "0"}
+[0m19:24:06.350105 [debug] [MainThread]: Command `dbt debug` failed at 19:24:06.349987 after 46.13 seconds
+[0m19:24:06.350493 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:24:06.350862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc312ba2de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc312aace00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3112a4f80>]}
+[0m19:24:06.351268 [debug] [MainThread]: Flushing usage events
